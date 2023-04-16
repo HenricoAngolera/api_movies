@@ -69,7 +69,15 @@ class MovieNotesController {
         .orderBy("title");
     }
 
-    response.json(movie_notes);
+    const userTags = await knex('movie_tags').where({ user_id })
+    const notesWithTags = movie_notes.map(movie_note => {
+      const noteMovieTag = userTags.filter(movie_tag => movie_tag.note_id == movie_note.id);
+      return {
+        ...movie_note,
+        tags: noteMovieTag
+      }
+    })
+    response.json(notesWithTags);
   }
 }
 
