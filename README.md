@@ -12,13 +12,19 @@ Esta foi uma API desenvolvida durante o Desafio do Stage 08 no Explorer da Rocke
 
 ## Documentação
 
-Rodar o seguinte comando para iniciar o projeto e o banco de dados:
+Para instalar os pacotes da pasta node_modules, rodar o seguinte comando:
+
+```bash
+    npm install
+```
+
+Após isso, rodar o seguinte comando para iniciar o projeto e o banco de dados:
 
 ```bash
     npm run dev
 ```
 
-Para criar o restante das tabelas pelo knex:
+E, para criar o restante das tabelas pelo knex:
 
 ```bash
     npm run migrate
