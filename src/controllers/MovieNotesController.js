@@ -27,7 +27,7 @@ class MovieNotesController {
 
     await knex("movie_tags").insert(movieTagsInsert);
 
-    response.status(201).json();
+    return response.status(201).json();
 
   }
 
@@ -38,7 +38,7 @@ class MovieNotesController {
 
     const movie_tags = await knex("movie_tags").where({ note_id: id }).orderBy("name");
 
-    response.json({
+    return response.json({
       ...movie_note,
       movie_tags
     });
@@ -82,7 +82,7 @@ class MovieNotesController {
         tags: noteMovieTag
       }
     })
-    response.json(notesWithTags);
+    return response.json(notesWithTags);
   }
 }
 
