@@ -11,7 +11,7 @@ class DiskStorage {
     return file
   }
 
-  async deleteFile() {
+  async deleteFile(file) {
     const filePath = path.resolve(uploadConfig.UPLOAD_FOLDER, file)
 
     try {
