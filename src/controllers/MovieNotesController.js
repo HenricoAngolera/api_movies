@@ -6,8 +6,8 @@ class MovieNotesController {
     const { title, description, rating, movie_tags } = request.body;
     const user_id = request.user.id;
 
-    if (rating < 1 || rating > 5){
-      throw new AppError('O rating precisa ser maior que 1 ou menor que 5');
+    if (rating < 0 || rating > 5){
+      throw new AppError('The rating must be greater than or equal to 0 or less than or equal to 5');
     }
 
     const [note_id] = await knex("movie_notes").insert({
