@@ -50,6 +50,11 @@ Foi desafiador fazer uma API back-end do zero. Mas foi gratificante ver o quanto
 - MovieTags
     - Mostrar
 
+## Relacionados
+
+Segue o projeto back-end desta aplicação:
+
+[API Movies](https://github.com/HenricoAngolera/api_movies)
 
 ## Feedback
 
