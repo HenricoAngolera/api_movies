@@ -52,9 +52,9 @@ Foi desafiador fazer uma API back-end do zero. Mas foi gratificante ver o quanto
 
 ## Relacionados
 
-Segue o projeto back-end desta aplicação:
+Segue o projeto front-end desta aplicação:
 
-[API Movies](https://github.com/HenricoAngolera/api_movies)
+[RocketMovies Front-end](https://github.com/HenricoAngolera/rocketmovies)
 
 ## Feedback
 
